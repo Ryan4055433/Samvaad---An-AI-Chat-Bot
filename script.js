@@ -2,8 +2,11 @@ let prompt=document.querySelector("#prompt")
 let submitbtn=document.querySelector("#submit")
 let chatContainer=document.querySelector(".chat-container")
 
+// Gemini 2.0 Flash endpoint
 const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-const Api_Key = "AIzaSyB-SrtH-4icOz0-BP8_NQPeH5S4XHJMRZk"
+
+// अपनी API Key यहाँ डालो (⚠️ unsafe on frontend)
+const Api_Key = "AIzaSyABuxQVqzXl1aZaGJJuP3yDxvp5ipEUoYo"
 
 let user={
     message:null
