@@ -1,17 +1,11 @@
 let prompt=document.querySelector("#prompt")
 let submitbtn=document.querySelector("#submit")
 let chatContainer=document.querySelector(".chat-container")
-
-// Gemini 2.0 Flash endpoint
 const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
-
-// अपनी API Key यहाँ डालो (⚠️ unsafe on frontend)
 const Api_Key = "AIzaSyABuxQVqzXl1aZaGJJuP3yDxvp5ipEUoYo"
-
 let user={
     message:null
 }
- 
 async function generateResponse(aiChatBox) {
     let text=aiChatBox.querySelector(".ai-chat-area")
 
@@ -91,3 +85,4 @@ prompt.addEventListener("keydown",(e)=>{
 submitbtn.addEventListener("click",()=>{
     handlechatResponse(prompt.value)
 })
+
