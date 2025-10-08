@@ -4,7 +4,7 @@ let chatContainer=document.querySelector(".chat-container")
 
 const Api_Url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent"
 
-const Api_Key = "AIzaSyABuxQVqzXl1aZaGJJuP3yDxvp5ipEUoYo"
+const Api_Key = "AIzaSyBShypNz6OuGi-TC8tm2lsKzXknZoLnyQM"
 
 let user={
     message:null
@@ -89,3 +89,4 @@ prompt.addEventListener("keydown",(e)=>{
 submitbtn.addEventListener("click",()=>{
     handlechatResponse(prompt.value)
 })
+
